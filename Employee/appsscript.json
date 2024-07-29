@@ -1,0 +1,16 @@
+{
+  "timeZone": "Asia/Singapore",
+  "dependencies": {
+    "libraries": [{
+      "userSymbol": "GeminiWithFiles",
+      "libraryId": "1dolXnIeXKz-BH1BlwRDaKhzC2smJcGyVxMxGYhaY2kqiLa857odLXrIC",
+      "version": "8"
+    }, {
+      "userSymbol": "PDFApp",
+      "libraryId": "1Xmtr5XXEakVql7N6FqwdCNdpdijsJOxgqH173JSB0UOwdb0GJYJbnJLk",
+      "version": "8"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8"
+}
