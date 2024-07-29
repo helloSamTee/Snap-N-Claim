@@ -7,8 +7,11 @@ Snap N Claim is a technological business solution specially crafted for SMEs tha
 
 Credits are to be given to ‘tanaikech’ on github as his library of ‘GeminiWithFiles’ and ‘PDFApp’ are deployed in our source code. Repository link are attached : https://github.com/tanaikech/GeminiWithFiles?tab=readme-ov-file 
 
+
+
 ## Feature
 Here is what you can achieve through Snap N Claim source code:
+
 
 ### Content Upload
 Receipts generated from business trips can be uploaded in pdf and image format through sideBar in Google Spreadsheet
@@ -37,12 +40,15 @@ Google Calendar is used to store events on date and location of receipts for rec
 ### Dealing with multi-currency
 Since business trips involve traveling internationally, Snap N Claim can deal with over 100 currencies all around the world and convert total cost in receipt into MYR.
 
+
+
 ## Usage
 In order to implement Snap N Claim add-on, please do the following steps:
 
+
 ### Download Template
 Copy the Employee Spreadsheet and Admin Spreadsheet Template consisting of app script code into your Google Drive using the link below: 
-[Employee Claim Sheet](https://docs.google.com/spreadsheets/d/1BmKe1mw9uTBaHyyFk1z_ZRIcUbcqtnG_-2VLlw1HCE0/copy?usp=sharing)
+[Employee Claim Sheet](https://docs.google.com/spreadsheets/d/1BmKe1mw9uTBaHyyFk1z_ZRIcUbcqtnG_-2VLlw1HCE0/copy?usp=sharing) &
 [Admin Spreadsheet](https://docs.google.com/spreadsheets/d/1mmnuZYsTVpDn3vB0RJQMRV643eEHmI7t7ywd85YNtNQ/copy?usp=sharing)
 
 ### Create API Key
@@ -51,15 +57,15 @@ Access https://makersuite.google.com/app/apikey and create your API key. Enable 
 ### Create Installable Trigger
 On the top menu bar of Google Spreadsheet, click Extensions> App Script, then you will see the source code of the extensions. On left side bar, click Trigger> Add a trigger> Fill in the details> Save
 
-
 ### Give Access
 Opening the add-on the first time will generate a pop up asking for permissions stating  the script is from an untrusted source. Click Review Permissions > Advanced > Go to ‘Name’ (unsafe) > Check and allow all the permissions needed. Then, you’re good to go!
 
  
 
 ## Instructions
-### Admin:
 
+
+### Admin:
 Upon opening Admin Spreadsheet, three sheets are listed ‘notApproved’, ‘Approved’ and ‘Employees’.
 
 #### Approve Request
@@ -68,8 +74,8 @@ As Admin Spreadsheet is opened, the first default sheet showing in “notApprove
 #### Add Employee
 ‘Employees’ consist of records of all ‘employee email’, ‘employee folder name’ and ‘employee folder id’. To add new employee, admin click on the button showing ‘Add New Employee’ and fill in valid name and email address. A google drive folder and spreadsheet will be created, email will be sent to the stated email address attached with folder access link. 
 
-### Employee:
 
+### Employee:
 Upon opening the Employee Spreadsheet, three sheets are listed ‘notApproved’, ‘Approved’ and ‘Projects’.
 
 #### Upload Receipt
@@ -80,6 +86,8 @@ After new record is added, certain columns such as ‘Purpose/Tag’, ‘Descrip
 
 #### Add Project
 In case of needing to add new project handled by employee, click ‘Upload’ on menu bar of spreadsheet, click ‘Add Project’ and fill in non-duplicate and valid Project Number. Then click ‘Done’ and refresh the sideBar, new project options will appear in the dropdown list.
+
+
 
 ## Scopes
 The source code uses the following scopes:
@@ -92,8 +100,10 @@ The source code uses the following scopes:
 “https://www.googleapis.com/auth/presentations”
 
 
+
 ## Methods
 Below are the methods used in Employee Spreadsheet:
+
 
 ##### 1. extractDataFromReceipt(fileArrs)
 Calling Gemini API to extract information such as receipt ID, receipt Date, business Name, business Location, payment Method and total Cost by taking in parameters of fileArrs containing multiple fileId
