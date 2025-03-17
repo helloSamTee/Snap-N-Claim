@@ -124,7 +124,7 @@ To check if the edited cell is within ‘records’ named range and ensure recei
 Check if edits made by user are within the ‘records’ named range
 
 ##### 7. delRow(rowNum, sheetName, tableRange)
-Delete row of record
+Delete row of records
 
 ##### 8. del()
 Get user’s input on desired row to be deleted
